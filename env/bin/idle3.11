@@ -1,0 +1,5 @@
+#!/Users/oscarlopez/Desktop/portfolio/CNC_GCODE_COMPILER/env/bin/python3.11
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,13 @@
+prefix=/Users/oscarlopez/Desktop/portfolio/CNC_GCODE_COMPILER/env
+exec_prefix=/Users/oscarlopez/Desktop/portfolio/CNC_GCODE_COMPILER/env
+libdir=/Users/oscarlopez/Desktop/portfolio/CNC_GCODE_COMPILER/env/lib
+sharedlibdir=/Users/oscarlopez/Desktop/portfolio/CNC_GCODE_COMPILER/env/lib
+includedir=/Users/oscarlopez/Desktop/portfolio/CNC_GCODE_COMPILER/env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
