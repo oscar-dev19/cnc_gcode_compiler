@@ -4,7 +4,7 @@ start : expr | <EOF> ;
 
 expr     : 'G00' 'X'x_cord=NUMBER 'Y'y_cord=NUMBER #fastPositionExpr
          | 'G01' 'X'x_cord=NUMBER 'Y'y_cord=NUMBER ('F'speed=NUMBER)? ('Z'color=COLOR)? #linInterpolateExpr
-         | 'G02' 'D'degrees=NUMBER #circularClockwiseInterpolateExpr
+         | 'G02' degrees=NUMBER #circularClockwiseInterpolateExpr
          | 'G03' 'R'radius=NUMBER 'D'degrees=NUMBER ('F'speed=NUMBER)? ('Z'color=COLOR)? #drawarcExpr
          ;
 
